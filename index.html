@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Malikli Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Fatima Malikli</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+            </div>
+        </nav>
+    </header>
+    <!-- SECTION 1: About-->
+    <section id="about-section">
+        <h2> Hello World, I'm Fatima!</h2>
+        <div class="headshot">
+            <picture>
+                <source srcset="images/webp/headshot.webp" type="image/webp">
+                <img src="images/headshot.png" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Hey! I am Fatima, a senior UC Berkeley student pursuing Data Science (with an emphasis on Business &
+                Industrial Analytics) and Cognitive Science.
+                I am passionate about AI, robotics, and human cognition, and well equipped with a technical skillset and
+                an eagerness to learn!
+                I am passionate about solving complex problems at the intersection of technology and human behavior!
+            </p>
+            <br>
+            <p>
+                Outside of academics, I also enjoy reading, baking, playing with my cat, and exploring new cafes!
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/fatima-malikli/" target="_ blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Projects-->
+    <div class="divider"></div>
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div class = "projects-container">
+            
+        </div>
+     
+    </section>
+
+    <!-- SECTION 3: Skills-->
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-java"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-solid fa-file-excel"></i>
+          <i class="fa-solid fa-r"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-github-alt"></i>
+        </div>
+    </section>
+      
+
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Fatima Malikli. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
+</body>
+
+</html>
