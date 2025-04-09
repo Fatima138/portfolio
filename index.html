@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 </head>
@@ -58,15 +59,185 @@
         </div>
     </section>
 
-    <!-- SECTION 2: Projects-->
-    <div class="divider"></div>
-    <section id="projects-section">
-        <h2>Projects</h2>
-        <div class = "projects-container">
-             
+    <!-- SECTION 2: Projects -->
+<div class="divider"></div>
+<section id="projects-section">
+    <h2>Projects</h2>
+
+    <!-- Research & Industry Projects Subsection -->
+    <div class="project-subsection">
+        <h3>Research & Industry</h3>
+        <div #swiperRef="" class="swiper card-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="javascript:void(0);" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/mouse.webp" type="image/webp">
+                        <img src="images/mouse.png" alt="Mouse Movement Study">
+                        </picture>
+                        <h4>Mouse Movement Study</h4>
+                        <h5><em>JavaScript, Python</em></h5>
+                        <p>Designed an experiment linking mouse movement patterns to memory recall to explore potential behavioral markers for mental health conditions.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="javascript:void(0);" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/haas.webp" type="image/webp">
+                            <img src="images/haas.jpg" alt="Haas CRM">
+                        </picture>
+                        <h4>MBA CRM Optimization</h4>
+                        <h5><em>HubSpot, Excel</em></h5>
+                        <p>Improved a CRM system for the MBA Program, resolving 15,000+ duplicates and correcting 260,000 formatting issues to increase data reliability and efficiency.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="javascript:void(0);" class="project-box">
+                        <picture>
+                            <source srcset="images/webp/covariant.webp" type="image/webp">
+                        <img src="images/covariant.jpg" alt="Covariant AI Robot">
+                        </picture>
+                        <h4>Robot Downtime Detection</h4>
+                        <h5><em>SQL, NetSuite, Duro</em></h5>
+                        <p>Led robot downtime detection and analysis using SQL. Streamlined procurement workflows and supported project kitting for robotic assembly builds.</p>
+                    </a>
+                </div>
+
+            </div>
         </div>
-     
-    </section>
+    </div>
+
+   <!-- Academic Projects Subsection -->
+<div class="project-subsection">
+    <h3>Academic Projects</h3>
+    <div #swiperRef="" class="swiper card-swiper">
+        <div class="swiper-wrapper">
+
+            <!-- 1. Koret Visitor Center Database -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/koret visitor center.webp" type="image/webp">
+                        <img src="images/koret visitor center.jpg" alt="Visitor Center DB">
+                    </picture>
+                    <h4>Koret Visitor Center Database</h4>
+                    <h5><em>MySQL, Python, Excel</em></h5>
+                    <p>Designed database solutions and ran survival analysis on 40,000 entries to support scheduling, staffing, and marketing for the UC Berkeley Visitor Center.</p>
+                </a>
+            </div>
+
+            <!-- 2. Spam Classifier -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/email.webp" type="image/webp">
+                        <img src="images/email.png" alt="Spam Classifier">
+                    </picture>
+                    <h4>Spam Classifier</h4>
+                    <h5><em>Python, Scikit-learn</em></h5>
+                    <p>Classified emails using text features and built predictive models using Scikit-learn. Evaluated performance with precision-recall curves and minimized overfitting.</p>
+                </a>
+            </div>
+
+            <!-- 3. Restaurant Recommender -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/restaurant.webp" type="image/webp">
+                        <img src="images/restaurant.jpg" alt="Restaurant Recommender">
+                    </picture>
+                    <h4>Restaurant Recommender</h4>
+                    <h5><em>Python</em></h5>
+                    <p>Used k-means clustering and linear regression to build a restaurant recommendation engine for Berkeley students and visitors, predicting user preferences and visualizing results.</p>
+                </a>
+            </div>
+
+            <!-- 4. Neural Networks -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/neuralnet.webp" type="image/webp">
+                        <img src="images/neuralnet.jpg" alt="Neural Networks">
+                    </picture>
+                    <h4>Neural Networks</h4>
+                    <h5><em>Python</em></h5>
+                    <p>Built and trained neural networks with ReLU and gradient descent; evaluated performance across various configurations to study cognitive learning models.</p>
+                </a>
+            </div>
+
+            <!-- 5. Cystic Fibrosis Cell Study -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/cell.webp" type="image/webp">
+                        <img src="images/cell.jpg" alt="Cystic Fibrosis">
+                    </picture>
+                    <h4>Cystic Fibrosis Cell Study</h4>
+                    <h5><em>Python, Pandas</em></h5>
+                    <p>Analyzed scRNA-seq data to identify associations between cell types and cystic fibrosis. Visualized trends using rolling averages and explored implications for research.</p>
+                </a>
+            </div>
+
+            <!-- 6. NGordnet -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/ngordnet.webp" type="image/webp">
+                        <img src="images/ngordnet.webp" alt="NGordnet NLP Tool">
+                    </picture>
+                    <h4>NGordnet NLP Tool</h4>
+                    <h5><em>Java, Graph Algorithms</em></h5>
+                    <p>Built a Java backend to analyze 300MB+ of linguistic data using graph algorithms. Integrated WordNet and Google Ngram to visualize semantic evolution trends.</p>
+                </a>
+            </div>
+
+            <!-- 7. Gitlet -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/gitlet.webp" type="image/webp">
+                        <img src="images/gitlet.webp" alt="Gitlet">
+                    </picture>
+                    <h4>Gitlet</h4>
+                    <h5><em>Java</em></h5>
+                    <p>Created a simplified version control system that mimics Git commands like commit, branch, and merge, showcasing strong command-line and data structure skills.</p>
+                </a>
+            </div>
+
+            <!-- 8. 2048 -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/2048.webp" type="image/webp">
+                        <img src="images/2048.webp" alt="2048 Game">
+                    </picture>
+                    <h4>2048</h4>
+                    <h5><em>Java</em></h5>
+                    <p>Rebuilt the logic for 2048 using object-oriented Java, implementing game mechanics with constructors, method chaining, and class design.</p>
+                </a>
+            </div>
+
+            <!-- 9. Ants vs. SomeBees -->
+            <div class="swiper-slide">
+                <a href="javascript:void(0);" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/ants.webp" type="image/webp">
+                        <img src="images/ants.webp" alt="Ants vs SomeBees">
+                    </picture>
+                    <h4>Ants vs. SomeBees</h4>
+                    <h5><em>Python</em></h5>
+                    <p>Developed a tower defense game with OOP in Python, building out ant and bee behaviors, game states, and custom logic for a dynamic in-game environment.</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
 
     <!-- SECTION 3: Skills-->
     <div class="divider"></div>
